@@ -1,78 +1,85 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+
+$buttoncolor :#8a19f4;
+$buttonswipe :#09c372;
+
+@import url(https:fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+
 .body {
-  display: block;
-}
+   display: block;
+ }
 
-/*Button */
-.button_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+*Button */
+ .button_container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
-.btn {
-  border: none;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
-  position: relative;
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  background-color: #8a19f4;
-  padding: 17px 60px;
-  margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+ }
+ .btn {
+   border: none;
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   text-transform: uppercase;
+   outline: none;
+   overflow: hidden;
+   position: relative;
+   color: #fff;
+   font-weight: 700;
+   font-size: 15px;
+   background-color: $buttoncolor;
+   padding: 17px 60px;
+   margin: 0 auto;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+ }
 
-.btn1 {
-  background-color: #09c372;
-}
+ .btn1 {
+   background-color: $buttonswipe
+ }
+ .btn1:after { 
+   background: $buttoncolor;
+ }
+ .btn1:hover:after {
+   background-color: aqua;
+ }
 
-.btn1:after {
-  background: #8a19f4;
-}
+ .btn span {
+   position: relative; 
+   z-index: 1;
+ }
 
-.btn1:hover:after {
-  background-color: aqua;
-}
+ .btn:after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 490%;
+   width: 140%;
+   background: $buttonswipe;
+   -webkit-transition: all .5s ease-in-out;
+   transition: all .5s ease-in-out;
+   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+   transform: translateX(-98%) translateY(-25%) rotate(45deg);
+ }
 
-.btn span {
-  position: relative;
-  z-index: 1;
-}
+ .btn:hover:after {
+   background-color: #6513b2;
+   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+   transform: translateX(-9%) translateY(-25%) rotate(45deg);
+ }
 
-.btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 490%;
-  width: 140%;
-  background: #09c372;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
-}
+ .link {
+   font-size: 20px;
+   margin-top: 30px;
+ }
 
-.btn:hover:after {
-  background-color: #6513b2;
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-.link {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.link a {
-  color: #000;
-  font-size: 25px;
-}
+ .link a {
+   color: #000;
+   font-size: 25px; 
+ }
 
 /* NAVBAR */
+
 * {
   padding: 0;
   margin: 0;
@@ -105,7 +112,7 @@ header {
 }
 
 #nav a {
-  color: #09c372;
+  color: #09c372
 }
 
 ul {
@@ -152,7 +159,8 @@ ul li:hover {
   color: #945fb8;
 }
 
-/* HAMBURGER//MOBILE MENU */
+/* HAMBURGERMOBILE MENU */
+
 #hamburger-icon {
   margin: auto 0;
   display: none;
@@ -169,6 +177,7 @@ ul li:hover {
 
 .open .bar1 {
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+   transform: rotate(-45deg); translate(-6px, 6px);
 }
 
 .open .bar2 {
@@ -176,6 +185,7 @@ ul li:hover {
 }
 
 .open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
@@ -203,7 +213,8 @@ ul li:hover {
   header nav {
     display: none;
   }
+
   #hamburger-icon {
     display: block;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
