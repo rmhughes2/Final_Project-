@@ -166,7 +166,7 @@
 .cards_whole {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .card {
@@ -207,8 +207,9 @@
   
   .card-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
+    ;
   }
   
   .button {
@@ -296,6 +297,71 @@
     margin-right: 20px;
   }
   
+  /* perso cards */
+
+  .card_perso_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card_perso {
+    width: 190px;
+    height: 254px;
+    background: #3405a3;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+   }
+   
+   .card_perso .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #6b64f3;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+   }
+   
+   .card_perso span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+   }
+   
+   .card_perso .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+   }
+   
+   .card_perso.img {
+    width: 70px;
+    height: 80px;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+   }
+   
+   .card_perso button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+   }
+   
+   .card_perso button:hover {
+    background: #534bf3;
+   }
 /* footer  */
 
 .footer{
