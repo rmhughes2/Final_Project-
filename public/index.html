@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <header>
-        <ul>
-            <li><a class="logo" href="#"><img src="img/export.png"></a></li>
-        </ul>
-    <div id="nav"><a href="/">GrungeVille Tour 2023 </a></div>
-        <nav>
-          <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="mates">Dates</a></li>
-            <li><a href="merch">Merch</a></li>
-            <li id="signup"><a href="Newsletter">Newsletter</a></li>
-          </ul>
-        </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>GrungeVille Tour 2023</title>
+      <link
+         rel="preconnect"
+         href="https://fonts.gstatic.com"
+         crossorigin
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <header>
+         <ul>
+            <li>
+               <a class="logo" href="#">
+                  <img src="img/export.png" alt="Logo" />
+               </a>
+            </li>
+         </ul>
+         <div id="nav"><a href="/">GrungeVille Tour 2023</a></div>
+         <nav>
+            <ul>
+               <li><a href="home">Home</a></li>
+               <li><a href="dates">Dates</a></li>
+               <li><a href="merch">Merch</a></li>
+               <li><a href="newsletter">Newsletter</a></li>
+            </ul>
+         </nav>
+         <div
+            id="hamburger-icon"
+            onclick="toggleMobileMenu(this)"
+            aria-label="Mobile Navigation Menu"
+         >
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <ul class="mobile-menu">
-              <li><a href="home">Home</a></li>
-              <li><a href="products">Products</a></li>
-              <li><a href="about">About</a></li>
-              <li id="login"><a href="login">Login</a></li>
-              <li id="signup"><a href="signup">Sign Up</a></li>
-            </ul>
-     </div>
-     </header>
+         </div>
+         <ul class="mobile-menu" role="menu"></ul>
+      </header>
 
-      <div class="hero-image" style="background-image: url(img/hero.jpg);
-      height: 50%; width: 100% vh; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
-        <div class="hero-text">
-           <h1 id="hero"> This is a Reunion You Won't Want to Miss.</h1><br>
-           <h2>Join us June 6th to see your favorite classics' <br> come to life.</h2>
-        </div>
-    </div>
+      <div
+         class="hero-image"
+         style="
+            background-image: url(img/hero.jpg);
+            height: 50%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+         "
+      >
+         <div class="hero-text">
+            <h1 id="hero">
+               This is a Reunion You Won't Want to Miss.
+            </h1>
+            <br />
+            <h2>
+               Join us June 6th to see your favorite classics' <br />
+               come to life.
+            </h2>
+         </div>
+      </div>
 
-    <br>
-    <div class="cards_whole">
-        <div class="card">
+      <br />
+      <div class="cards_whole">
+         <div class="card">
             <div class="card-content">
-              <h2>About The Event </h2>
-              <p>GrungeVille takes place this year from August 19th - 21st, in Seattle WA. Check out our events schedule below and plan your trip!</p>
-              <div class="card-buttons">
-                <a href="#" class="button button-teal">Maps</a>
-                <a href="#" class="button button-teal">Schedule</a>
-              </div>
+               <h2>About The Event</h2>
+               <p>
+                  GrungeVille takes place this year from August 19th - 21st, in
+                  Seattle WA. Check out our events schedule below and plan your
+                  trip!
+               </p>
+               <div class="card-buttons">
+                  <a href="#" class="button button-teal">Maps</a>
+                  <a href="#" class="button button-teal">Schedule</a>
+               </div>
             </div>
-          </div>   
-          <br>
-          <div class="card">
+         </div>
+         <br />
+         <div class="card">
             <div class="card-content">
-              <h2>What is GrungeVille? </h2>
+               <h2>What is GrungeVille?</h2>
               <p>Welcome to "GrungeVille", the ultimate celebration of grunge and rock music! <br> This three-day festival brings together the best of the genre, from iconic bands to up-and-coming artists. </p>
               <div class="card-buttons">
                 <a href="#" class="button button-teal">Read More</a>
@@ -102,42 +131,38 @@
       <div class="card_perso">
         <div class="card-border-top">
         </div>
-        <div class="img">
-        </div>
-        <span> Person</span>
-        <p class="job"> Job Title</p>
-        <button> Click
+        
+        <span> Dirt Tokain</span>
+        <p class="job"> Nirvana Cover Band <br>--Vocals</p>
+        <button> Learn More! 
         </button>
       </div>
       <div class="card_perso">
         <div class="card-border-top">
         </div>
-        <div class="img">
-        </div>
-        <span> Person</span>
-        <p class="job"> Job Title</p>
-        <button> Click
+   
+        <span> Brett Michaels</span>
+        <p class="job"> Pearl Jam Cover Band <br>--Drums</p>
+        <button> Learn More!
         </button>
       </div>
       <div class="card_perso">
         <div class="card-border-top">
         </div>
-        <div class="img">
-        </div>
-        <span> Person</span>
-        <p class="job"> Job Title</p>
-        <button> Click
+        <span> Mark Taylor</span>
+        <p class="job"> Soundgarden Cover Band <br> -- Guitar</p>
+        <button> Learn More!
         </button>
       </div>
       </div>
+      <br>
       <footer>
         <div class="footer">
         <div class="row">
-        <a href="#"><i class="fa fa-instagram"><img src="img/fb_logo.png" alt=""></i></a>
-        <a href="#"><i class="fa fa-youtube"></i></a>
+             <a href="#"><i class="fa fa-instagram"><img src="img/fb_logo.png" alt=""></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
-        
         <div class="row">
         <ul>
         <li><a href="#">Contact us</a></li>
